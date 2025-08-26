@@ -33,3 +33,26 @@ CREATE TABLE emprestimos (
     FOREIGN KEY (id_livro) REFERENCES livros(id_livro),
     FOREIGN KEY (id_leitor) REFERENCES leitores(id_leitor)
 );
+
+INSERT INTO autores (nome, nacionalidade, ano_nascimento) VALUES
+('Machado de Assis', 'Brasileiro', 1839),
+('J.K. Rowling', 'Britânica', 1965),
+('George Orwell', 'Britânico', 1903),
+('Clarice Lispector', 'Brasileira', 1920);
+
+INSERT INTO livros (titulo, genero, ano_publicacao, id_autor) VALUES
+('Dom Casmurro', 'Romance', 1899, 1),
+('Memórias Póstumas de Brás Cubas', 'Romance', 1881, 1),
+('Harry Potter e a Pedra Filosofal', 'Fantasia', 1997, 2),
+('1984', 'Distopia', 1949, 3),
+('A Hora da Estrela', 'Romance', 1977, 4);
+
+INSERT INTO leitores (nome, email, telefone) VALUES
+('Ana Souza', 'ana@email.com', '11987654321'),
+('Carlos Silva', 'carlos@email.com', '11976543210'),
+('Mariana Oliveira', 'mariana@email.com', '21965432109');
+
+INSERT INTO emprestimos (id_livro, id_leitor, data_emprestimo, data_devolucao) VALUES
+(1, 1, '2025-08-01', '2025-08-15'),
+(3, 2, '2025-08-05', NULL),
+(4, 3, '2025-08-10', '2025-08-20');
