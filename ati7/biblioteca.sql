@@ -1,7 +1,6 @@
 CREATE DATABASE IF NOT EXISTS biblioteca;
 USE biblioteca;
 
--- Criar tabela autores
 CREATE TABLE autores (
     id_autor INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE autores (
     ano_nascimento INT
 );
 
--- Criar tabela livros
 CREATE TABLE livros (
     id_livro INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(150) NOT NULL,
@@ -19,7 +17,6 @@ CREATE TABLE livros (
     FOREIGN KEY (id_autor) REFERENCES autores(id_autor)
 );
 
--- Criar tabela leitores
 CREATE TABLE leitores (
     id_leitor INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -27,7 +24,6 @@ CREATE TABLE leitores (
     telefone VARCHAR(20)
 );
 
--- Criar tabela emprestimos
 CREATE TABLE emprestimos (
     id_emprestimo INT AUTO_INCREMENT PRIMARY KEY,
     id_livro INT,
