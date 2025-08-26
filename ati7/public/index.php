@@ -1,19 +1,44 @@
 <?php
-// index.php
+
 ?>
-<!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Biblioteca - Sistema</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção</title>
+    <link rel="stylesheet" href="../public/assets/style.css">
 </head>
 <body>
-  <h1>Sistema da Biblioteca</h1>
-  <ul>
-    <li><a href="read_autores.php">Autores</a></li>
-    <li><a href="read_livros.php">Livros</a></li>
-    <li><a href="read_leitores.php">Leitores</a></li>
-    <li><a href="read_emprestimos.php">Empréstimos</a></li>
-  </ul>
+    <header>
+
+    </header>
+
+    <main class="centralizar flex">
+<a href="../public/autores/read.php">
+<button class="botoes_menu">
+    <h1>autores</h1>
+</button>
+</a>
+<a href="../public/emprestimos/read.php">
+<button class="botoes_menu">
+    <h1>emprestimos</h1>
+</button>
+</a>
+<a href="../public/leitores/read.php">
+    <button class="botoes_menu">
+        <h1>leitores</h1>
+    </button>
+</a>
+<a href="../public/livros/read.php">
+    <button class="botoes_menu">
+        <h1>livros</h1>
+    </button>
+</a>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
