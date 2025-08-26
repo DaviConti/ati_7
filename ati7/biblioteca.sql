@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS biblioteca;
-USE biblioteca;
+CREATE DATABASE IF NOT EXISTS biblioteca_1;
+USE biblioteca_1;
 
 CREATE TABLE autores (
     id_autor INT AUTO_INCREMENT PRIMARY KEY,
