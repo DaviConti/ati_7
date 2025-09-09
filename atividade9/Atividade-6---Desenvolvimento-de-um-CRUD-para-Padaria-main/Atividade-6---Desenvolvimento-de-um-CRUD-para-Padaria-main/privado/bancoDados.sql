@@ -43,3 +43,11 @@ CREATE TABLE pedidos(
     FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
     FOREIGN KEY (id_produto) REFERENCES produto(id_produto)
 );
+
+CREATE TABLE usuarios(
+	pk int AUTO_INCREMENT PRIMARY KEY,
+    username varchar(120) NOT null UNIQUE,
+    senha varchar(255) NOT null
+);
+
+INSERT INTO usuarios (usernames, senhas) VALUES ('admin','123')
